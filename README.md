@@ -1,2 +1,1 @@
-# workout-app
-using mern stack
+# Blog
