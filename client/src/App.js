@@ -1,19 +1,23 @@
 import "./App.css";
 import Header from "./components/Header";
-import  Post from "./components/Post";
-import {Routes} from "react-router-dom";
+import Post from "./components/Post";
+import { Route,Routes } from "react-router-dom";
 
 function App() {
   return (
-    <main>
-      <Header/>
-      <Post/>
-      <Post/>
-      <Post/>
-
-      
-      
-    </main>
+    <Routes>
+      <Route
+        index
+        element={
+          <main>
+            <Header />
+            <Post />
+            <Post />
+            <Post />
+          </main>
+        }
+      ></Route>
+    </Routes>
   );
 }
 
